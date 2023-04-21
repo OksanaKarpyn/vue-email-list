@@ -16,12 +16,12 @@
     <div id="app">
         <div class="wrapper">
             <div class="container m-auto  border-bottom">
-                <div class="title"><h2>Lista-e-mail</h2></div>
-               <ul>
-                <li v-for="email in emails" class="p-2"> {{email}}
+                <div class="title text-center text-dark-emphasis"><h2>Lista-e-mail</h2></div>
+               <ul class="">
+                <li v-for="email in emails" class="p-2 bg-light m-2"> {{email}}
                 </li>
                </ul>
-               <button @click="api()" class="btn btn-info">click</button>
+               <button @click="api()" class="btn btn-outline-info">click</button>
             </div>
         </div>
 
