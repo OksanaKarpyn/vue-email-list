@@ -16,9 +16,9 @@
     <div id="app">
         <div class="wrapper">
             <div class="container m-auto  border-bottom">
-                <div class="title text-center text-dark-emphasis"><h2>Lista-e-mail</h2></div>
-               <ul class="">
-                <li v-for="email in emails" class="p-2 bg-light m-2"> {{email}}
+                <div class="title text-center text-dark-emphasis"><h3>Lista-e-mail</h3></div>
+               <ul v-if="emails.length === count">
+                <li v-for="email in emails" class="p-1 bg-light m-1"> {{email}}
                 </li>
                </ul>
                <button @click="api()" class="btn btn-outline-info">click</button>
